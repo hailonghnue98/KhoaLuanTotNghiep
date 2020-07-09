@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Slide.BoCauHoiScreenSlideActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#2196F3"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/colorPrimary"
+                android:padding="5dip">
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back"></ImageView>
+                <TextView
+                    android:layout_width="5dip"
+                    android:layout_height="match_parent"></TextView>
+                <TextView
+                    android:id="@+id/tvBCHModuleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="MODULE 1"
+                    android:textSize="10sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"></TextView>
+                <Button
+                    android:id="@+id/btnDSCauHoi"
+                    android:text="DS câu hỏi"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:background="@drawable/border_btn_red"
+                    android:layout_width="68dip"
+                    android:layout_height="match_parent"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.viewpager.widget.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPrev"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/border_btn_blue"
+                android:src="@drawable/left_arrow"
+                android:text="Prev"></ImageView>
+
+            <Button
+                android:id="@+id/btnXemBaiLam"
+                android:text="Bài làm"
+                android:background="@drawable/border_btn_red"
+                android:textColor="#fff"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dip"
+                android:visibility="gone"></Button>
+
+            <Button
+                android:id="@+id/btnDapan"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dip"
+                android:background="@drawable/border_btn_red"
+                android:text="Trở lại"
+                android:textColor="#fff"></Button>
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:text="Next"
+                android:background="@drawable/border_btn_blue"
+                android:src="@drawable/right_arrow"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dip"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

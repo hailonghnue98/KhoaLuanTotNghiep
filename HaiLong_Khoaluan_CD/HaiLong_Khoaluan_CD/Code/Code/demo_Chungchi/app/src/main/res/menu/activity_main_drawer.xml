@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_thi"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Làm Bài Thi" />
+        <item
+            android:id="@+id/nav_lsthi"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Lịch Sử Bài Thi" />
+        <item
+            android:id="@+id/nav_bocauhoi"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Bộ Câu Hỏi" />
+        <item
+            android:id="@+id/nav_ontap"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ôn Tập" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Chia sẻ ứng dụng" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Thông tin tác giá" />
+        </menu>
+    </item>
+
+</menu>

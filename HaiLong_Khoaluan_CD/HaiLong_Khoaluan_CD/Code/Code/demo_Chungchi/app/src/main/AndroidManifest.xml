@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.demo_chungchi">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic3_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/myNoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TacgiaActivity"></activity>
+        <activity android:name=".ShowPagesActivity" />
+        <activity android:name=".PDFViewActivity" />
+        <activity android:name=".ImageZoomActivity" />
+        <activity
+            android:name=".CTLichSuLamBaiActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.example.Slide.LichSuBaiThiScreenSlideActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".LichSuLamBaiActivity" />
+        <activity
+            android:name="com.example.Slide.ThiScreenSlideActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ThiThuActivity" />
+        <activity
+            android:name="com.example.Slide.BoCauHoiScreenSlideActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".Module3Activity" />
+        <activity android:name=".Module2Activity" />
+        <activity android:name=".Module1Activity" />
+        <activity android:name=".BoCauHoiActivity" />
+        <activity
+            android:name="com.example.Slide.ScreenSlideActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".MeoActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThiActivity" />
+        <activity android:name=".HocActivity" />
+        <activity
+            android:name="com.example.MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

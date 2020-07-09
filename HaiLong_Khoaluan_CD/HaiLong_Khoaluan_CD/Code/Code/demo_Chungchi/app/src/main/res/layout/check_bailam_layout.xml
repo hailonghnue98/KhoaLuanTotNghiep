@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/colorPrimary"
+        android:padding="5dip">
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="match_parent"></TextView>
+        <TextView
+            android:id="@+id/tvModuleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BÀI LÀM"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"></TextView>
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/close"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/gvBallam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:numColumns="2"></GridView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:background="#CECBCB">
+            <Button
+                android:id="@+id/btnClose"
+                android:text="Đóng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_btn_red"
+                android:textColor="#fff"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

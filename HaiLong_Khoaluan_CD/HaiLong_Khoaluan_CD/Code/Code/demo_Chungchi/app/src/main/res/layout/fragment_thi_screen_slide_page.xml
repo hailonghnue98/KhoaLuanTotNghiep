@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Slide.ThiScreenSlidePageFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="#C142A6F3"
+                    android:gravity="center">
+                    <TextView style="?android:textAppearanceMedium"
+                        android:id="@+id/txtExam"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Đề số 1"
+                        android:textColor="#fff"/>
+                    <TextView style="?android:textAppearanceMedium"
+                        android:id="@+id/txtQuestionNumber"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Câu 1"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvSubject"
+                        android:text="Chủ đề"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip"
+                        android:textColor="#f55"></TextView>
+                    <TextView
+                        android:id="@+id/txtQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dip"
+                        android:text="Nội dung câu hỏi 1"
+                        android:padding="20dip"
+                        android:layout_margin="10dip"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:background="@drawable/border_radius"></TextView>
+                    <ImageView
+                        android:id="@+id/imgQuestion"
+                        android:src="@drawable/question_default"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dip"></ImageView>
+                    <RadioGroup
+                        android:id="@+id/radGr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dip"
+                            android:text="Câu A"
+                            android:padding="5dip"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/border_radius"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dip"
+                            android:text="Câu B"
+                            android:padding="5dip"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/border_radius"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dip"
+                            android:text="Câu C"
+                            android:padding="5dip"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/border_radius"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="60dip"
+                            android:text="Câu D"
+                            android:padding="5dip"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/border_radius"></RadioButton>
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/tvDapan"
+                        android:text="A"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/tvThongbao"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorThongbaoCX"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dip"></TextView>
+                    <TextView
+                        android:id="@+id/tvLuachon"
+                        android:text="B"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layoutGiaithich"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dip"
+                    android:visibility="gone"
+                    android:background="@drawable/border_giaithich"
+                    android:layout_margin="10dip">
+                    <TextView
+                        android:id="@+id/tvGiaithich"
+                        android:text="alo"
+                        android:gravity="center"
+                        android:textColor="@color/colorThongbaoSai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

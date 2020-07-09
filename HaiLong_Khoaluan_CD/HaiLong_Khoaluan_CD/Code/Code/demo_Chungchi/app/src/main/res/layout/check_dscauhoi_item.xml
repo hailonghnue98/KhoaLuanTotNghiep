@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dip">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/imgDSCHLogo"
+                android:src="@drawable/excel_round"
+                android:layout_width="50dip"
+                android:layout_height="50dip"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dip">
+                <TextView
+                    android:id="@+id/tvDSCHTitle"
+                    android:text="Câu 1"
+                    android:textColor="#313030"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_width="10dip"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:id="@+id/tvDSCHId"
+                    android:text="(ID: 101)"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvDSCHContent"
+                android:text="TP HCM hiện có hơn 170 di tích được xếp hạng, trong đó có hai di tích quốc gia đặc biệt (dinh Độc Lập và địa đạo Củ Chi), 56 di tích quốc gia và hơn 100 di tích cấp thành phố. "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"></TextView>
+    <LinearLayout
+        android:background="#333"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dip"></TextView>
+    <LinearLayout
+        android:id="@+id/frame_cauhoi_bailam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:background="@drawable/border_btn_blue"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="4dip"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:id="@+id/txtCauhoi"
+                android:text="Câu 99:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:gravity="left"></TextView>
+            <TextView
+                android:layout_width="2dip"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:id="@+id/txtTraloi"
+                android:text="A"
+                android:textColor="#fff"
+                android:layout_width="25dip"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textAlignment="center"></TextView>
+            <TextView
+                android:layout_width="4dip"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dip"></TextView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C142A6F3</color>
+    <color name="colorPrimaryDark">#045FBB</color>
+    <color name="colorAccent">#045FBB</color>
+    <color name="colorBG">#035A51</color>
+    <color name="colorWrongAns">#51FC0000</color>
+    <color name="colorCorrectAns">#6143F012</color>
+    <color name="colorThongbaoCX">#0BB910</color>
+    <color name="colorThongbaoSai">#F80606</color>
+    <color name="colorChualam">#FF9541</color>
+    <color name="colorCaudung">#0DC911</color>
+    <color name="colorCausai">#FF0000</color>
+    <color name="colorDiem">#045FBB</color>
+    <color name="colorThoigian">#805001</color>
+    <color name="colorResultBG">#F5F2F2</color>
+    <color name="colorRadChecked">#C142A6F3</color>
+</resources>

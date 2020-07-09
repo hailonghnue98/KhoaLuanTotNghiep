@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Slide.ThiScreenSlideActivity"
+    android:id="@+id/contain">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="#2196F3"
+                android:gravity="center">
+                <ImageView style="?android:textAppearanceMedium"
+                    android:layout_weight="3.5"
+                    android:src="@drawable/time"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_margin="10dip"/>
+                <TextView style="?android:textAppearanceMedium"
+                    android:id="@+id/txtTime"
+                    android:layout_width="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text="45:00"
+                    android:textColor="#fff"/>
+                <TextView style="?android:textAppearanceMedium"
+                    android:id="@+id/tvBailam"
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:text="Bài làm"
+                    android:textColor="#fff"
+                    android:visibility="gone"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center">
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:id="@+id/txtKiemtra"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nộp bài"
+                        android:textColor="#fff"
+                        android:visibility="visible"
+                        android:background="@drawable/border_btn_red"
+                        android:layout_margin="5dip"/>
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:id="@+id/tvXemdiem"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Xem điểm"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:background="@drawable/border_btn_red"
+                        android:layout_margin="5dip"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <androidx.viewpager.widget.ViewPager
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/pager"
+                    android:layout_below="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imgPrev"
+                    android:text="Prev"
+                    android:background="@drawable/border_btn_blue"
+                    android:src="@drawable/left_arrow"
+                    android:layout_width="100dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dip"></ImageView>
+                <Button
+                    android:id="@+id/btnXemBaiLam"
+                    android:text="Bài làm"
+                    android:background="@drawable/border_btn_red"
+                    android:textColor="#fff"
+                    android:layout_width="100dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dip"
+                    android:visibility="gone"></Button>
+
+                <Button
+                    android:id="@+id/btnNopBai"
+                    android:layout_width="100dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dip"
+                    android:background="@drawable/border_btn_red"
+                    android:text="Nộp bài"
+                    android:textColor="#fff"></Button>
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:text="Next"
+                    android:background="@drawable/border_btn_blue"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="100dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dip"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

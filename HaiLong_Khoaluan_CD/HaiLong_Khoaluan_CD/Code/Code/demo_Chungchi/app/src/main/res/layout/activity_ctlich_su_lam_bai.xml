@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CTLichSuLamBaiActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/colorPrimary"
+            android:padding="5dip">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"></ImageView>
+            <TextView
+                android:layout_width="20dip"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="KẾT QUẢ"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center_vertical"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTongDiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng điểm: 600"
+                    android:padding="2dip"
+                    android:textColor="#333"></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="2dip">
+                    <ImageView
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:src="@drawable/clock"></ImageView>
+                    <TextView
+                        android:layout_width="5dip"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"></TextView>
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:56"
+                        android:textColor="#333"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tvKetqua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRƯỢT"
+                    android:textStyle="bold"
+                    android:textColor="#FF0000"
+                    android:gravity="center"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:gravity="center_vertical|right">
+                    <TextView
+                        android:id="@+id/tvMade"
+                        android:text="Mã đề: 5"
+                        android:padding="2dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333"></TextView>
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dip"
+                    android:textColor="#333"></TextView>
+                    <TextView
+                        android:id="@+id/tvModule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MODULE 3: CSTT"
+                        android:textColor="#333"
+                        android:textSize="10sp"
+                        android:gravity="right"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabHost
+                android:id="@+id/tabHostKQBaiThi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:defaultFocusHighlightEnabled="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:showDividers="beginning"
+                        android:defaultFocusHighlightEnabled="true"/>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/kqbaithi_tab_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/kqbaithi_tab_all_content_layout"></include>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kqbaithi_tab_caudung"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/kqbaithi_tab_caudung_content_layout"></include>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kqbaithi_tab_causai"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/kqbaithi_tab_causai_content_layout"></include>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kqbaithi_tab_cauchualam"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <include layout="@layout/kqbaithi_tab_cauchualam_content_layout"></include>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+        <GridView
+            android:id="@+id/gvBocauhoi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></GridView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
